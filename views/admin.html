@@ -1,0 +1,11 @@
+{% include 'header.html' %}
+<body>
+<h1>Admin Page</h1>
+<ul>
+{% for record in records %}
+<li>{{record.search_term}} <a href='/del?id={{record._id}}'>Delete Record</a></li>
+<!--<li>{{record.search_term}}, <button class='delete-button'>Delete Record</button></li>-->
+{% endfor %}
+</ul>
+
+</body>

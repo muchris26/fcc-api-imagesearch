@@ -1,0 +1,17 @@
+{
+    "name": "fcc-api-imagesearch",
+    "description": "Free Code Camp - API Microservice - Image Search",
+    "version": "0.0.1",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies" :{
+        "express": "~4.13.0",
+        "mongodb": "~2.1.0",
+        "nunjucks": "~2.2.0",
+        "request": "~2.79.0",
+        "gettyimages-api": "~2.2.0",
+        "body-parser": "~1.16.0"
+    }
+}

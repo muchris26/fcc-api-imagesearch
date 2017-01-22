@@ -1,0 +1,10 @@
+{% include 'header.html' %}
+<body>
+<h1>History</h1>
+<ul>
+{% for record in records %}
+<li><a href='api?search={{record.search_term}}'>{{record.search_term}}</a></li>
+{% endfor %}
+</ul>
+
+</body>

@@ -1,0 +1,18 @@
+{% include 'header.html' %}
+
+</h1>Results for Search on: {{search_term}}</h1>
+
+<p><a href='/new'>New Search<a/></p>
+
+<p>You are on page: {{page_num}}</p>
+<p>Go to page: 
+    {% for page in pages %}
+    <a href='/api?page_num={{page}}&search={{search_term}}&offset={{offset}}'>{{page}}</a>
+    {% endfor %}
+</p>
+
+<p>
+{% for datum in data %}
+URL: <a href="http://www.gettyimages.com/detail/{{datum.id}}">http://www.gettyimages.com/detail/{{datum.id}}</a><br>Caption: {{datum.caption}} <br><br>
+{% endfor %}
+</p>
